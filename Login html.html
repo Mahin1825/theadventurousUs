@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login and Registration Form </title>
+	<link rel="stylesheet" type="text/css" href="Login css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c6de5e3dd9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class ="header">
+        <div class="container"> 
+            <nav>
+        <img src="images/logo 2.png" height="30"></a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                <li><a href="IT - Project.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact Us.html">CONTACT US</a></li>
+                <li><a href="Login html.html">LOGIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()"> Log In </button>
+				<button type="button" class="toggle-btn" onclick="register()"> Register </button>
+			</div>
+			<div class="social-icons">
+				<img src="images/fb.png">
+				<img src="images/ins.jpg">
+				<img src="images/twitter.png">
+			</div>
+        <form id="login" class="input-group">
+        	<input type="text" class="input-field" placeholder="User ID" required>
+        	<input type="text" class="input-field" placeholder="Enter Password" required>
+        	<input type="checkbox" class="check-box"> <span> Remember Password </span>
+        	<button type="Submit" class="submit-btn"> Log in </button>
+        </form>
+        <form id="register" class="input-group">
+        	<input type="text" class="input-field" placeholder="User ID" required>
+        	<input type="email" class="input-field" placeholder="Email ID" required>
+        	<input type="text" class="input-field" placeholder="Enter Password" required>
+        	<input type="checkbox" class="check-box"> <span> I agree to the terms and conditions </span>
+        	<button type="Submit" class="submit-btn"> Register </button>
+        </form>
+    </div>
+    </div>
+
+    <script>
+    	var x = document.getElementById("login");
+    	var y = document.getElementById("register");
+    	var z = document.getElementById("btn");
+    	function register(){
+    		x.style.left = "-400px"
+    		y.style.left = "50px"
+    		z.style.left = "110px"
+    	}
+    	function login(){
+    		x.style.left = "50px"
+    		y.style.left = "450px"
+    		z.style.left = "0"
+    	}
+    </script>
+    <section class="footer"> 
+            <h3 class="about" style="margin-bottom: 2%;"> About Us  </h3>
+            <p class="text"> We believe that "The world is a book and those who do not travel read only one page". </p>
+              <center><i class="fab fa-facebook fa-2x fa-color" style="margin-top: 2%;"></i></center>
+                <p class="copyright"> Copyright <i class="far fa-copyright"></i> 2021 Made by Mahin Panchal. All rights reserved</p>
+        </section>
+
+</body>
+</html>

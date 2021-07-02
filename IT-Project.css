@@ -1,0 +1,287 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+}
+.header {
+	height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(http://www.dream-wallpaper.com/free-wallpaper/travel-wallpaper/seychelles-wallpaper/1920x1200/free-wallpaper-14.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+   }
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:150px;
+    border-radius: 10px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 13 px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%; 
+    height: 2px;
+    background: #00FFBD;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.header img {
+	width: 200px;
+	float: left;
+}
+.title h1 {
+	padding-top: 230px;
+	padding-bottom: 0;
+	font-size: 55px;
+	font-family: sans-serif;
+}
+.title p{
+	margin: 18px 0;
+	font-size: 17px;
+}
+nav.fa {
+	 display:none
+}
+.input-group {
+	width: 90% !important;
+	max-width: 500px;
+	border-radius: 40px;
+	background: #fff;
+	margin: auto;
+	padding: 2px;
+}
+.form-control {
+	border: 0 !important;
+	border-radius: 30 px !important;
+	margin: 2px;
+	box-shadow: none !important;
+	padding-top: 100px ;
+}
+.input-group-text{
+	width: 100px;
+	background-image: linear-gradient(#00ff7e,#1f3d90);
+	border: 0 !important;
+	color: #fff !important;
+	padding: 0 25px !important;
+	border-radius: 30px !important;
+	box-shadow: none !important;
+	height: 40px;
+	padding-top: 100px;
+}
+
+/*features*/
+
+.features {
+	padding: 100px 0;
+}
+h1 {
+	text-align: center;
+	padding-bottom: 30px;
+}
+.feature-img img {
+    width: 100%;
+}
+.price {
+	width: 50px;
+	height: 50px;
+	background: #ff5722;
+	color: #fff;
+	font-weight: 600;
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+	position: absolute;
+	left: 20px;
+	bottom: -25px;
+}
+.feature-img {
+	position: relative;
+}
+.rating {
+	padding: 3px;
+	float: right;
+	background: #fff;
+	bottom: -1px;
+	right: 0;
+	position: absolute;
+}
+.features .fas {
+	font-size: 15px;
+	color: #ff5722;
+}
+.feature-details {
+	padding: 20px;;
+	text-align: center;
+}
+.feature-details h4 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+.feature-details .fa {
+	margin-right: 10px;
+}
+.feature-box {
+	box-shadow: 0 2px 10px 5px rgba(37,73,214,0.2);
+	margin-bottom: 30px;
+}
+.gallery {
+	padding: 100px 0;
+	background: #efefef;
+}
+.gallery-box img {
+	width: 100%;
+	border-radius: 13px;
+	cursor: pointer;
+	transition: 0.7s;
+}
+.gallery-box img:hover {
+	transform: scale(1.1);
+}
+.gallery-box h4 {
+	display: block;
+	color: #fff;
+	text-shadow: -2px 2px 2px #000;
+	text-align: center;
+	font-weight: 600;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.gallery-box {
+	position: relative;
+	margin-bottom: 30px;
+}
+.banner {
+	height: 90vh;
+	background-image: url(https://zeeoii.com/wp-content/uploads/2020/07/4K-Ultra-HD-Beach-Wallpapers-3840X2160-25.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding-top: 15%;
+}
+.banner-highlights {
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	color: #fff;
+}
+.booking-btn {
+    width: 120px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    margin-top: 20px;
+    text-decoration: none !important;
+} 
+.booking-btn a {
+	color: #fff;
+    text-decoration: none !important;
+    font-size: 13 px;
+}
+}
+.users-feedback {
+	padding: 100px 0;
+}
+.users-feedback .col-md-4 {
+	text-align: center;
+}
+.user-review {
+	text-align: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+	padding-bottom: 50px;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.user-review:hover {
+    transform: translateY(-10px);
+}
+.user-review p {
+	padding: 50px 10px 10px 10px;
+}
+.users-feedback img {
+	width: 70px;
+	height: 73px;
+	border-radius: 50%;
+	position: relative;
+	margin: -30px 140px 20px 40%;
+}
+.footer {
+	padding: 100px 20px 20px;
+	background-image: linear-gradient(to right, #0ee395,#00d4ff);
+	color: #fff;
+}
+.footer-logo {
+	width: 220px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+}
+.footer h4 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.footer p {
+	font-size: 15px;
+	text-align: justify;
+	padding-right: 35px;
+}
+.footer .row .fab {
+    padding-right: 20px;
+    font-size: 15 px;
+}
+.footer hr {
+	margin-top: 10px;
+	background: #efefef;
+}
+.footer .copyright {
+	text-align: center;
+	padding-top: 2%;
+}
+.footer .about {
+	text-align: center;
+	color: black;
+	font-family: verdana;
+}
+.footer .text {
+	text-align: center;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.footer .fab fa-facebook {
+	background: black;
+}
+.fa-color {
+	color: black;
+}

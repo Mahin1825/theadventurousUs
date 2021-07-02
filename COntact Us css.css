@@ -1,0 +1,217 @@
+* {
+	padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+	font-family: 'Montserrat', sans-serif;
+}
+.header {
+	height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://wallpaperaccess.com/full/1356106.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+   }
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:150px;
+    border-radius: 10px;
+    float: left;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+    font-weight: bolder;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 13 px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%; 
+    height: 2px;
+    background: #00FFBD;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.header img {
+	width: 200px;
+	float: left;
+}
+.maps .location {
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 210px;
+}
+
+.title h1 {
+    padding-top: 140px;
+    padding-bottom: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50x 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    font-weight: bold;
+}
+.contact .content p {
+    font-weight: 300;
+    color: lightgrey;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contact-info .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contact-info .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contact-info .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contact-info .box .text h3 {
+    font-weight: bold;
+    color: black;
+}
+.contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contact-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    font-weight: bold;
+}
+.contact-form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .inputbox input,
+.contact-form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ffffff;
+    border-bottom: 2px solid #333;
+    outline: black;
+    resize: vertical;
+}
+.contact-form .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.footer {
+    padding: 80px 20px 20px;
+    background: linear-gradient(to right, #0ee395,#00d4ff);
+    color: #fff;
+}
+.footer-logo {
+    width: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.footer .copyright {
+    text-align: center;
+    padding-top: 2%;
+}
+.footer .about {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+.footer .text {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.footer .fab fa-facebook {
+    background: black;
+}
+.fa-color {
+    color: black;
+}
+
+@media (max-width: 991px) 
+{
+    .contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .contact-info {
+        margin-bottom: 40px;
+    }
+    .container .contact-info, 
+    .contact-form {
+        width: 100%;
+    }
+}

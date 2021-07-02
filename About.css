@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bolder;
+}
+.header {
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://wallpaperaccess.com/full/1356106.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width:200px;
+    border-radius: 10px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration:none;
+    font-size: 13 px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%; 
+    height: 2px;
+    background: #00FFBD;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.title h1 {
+    padding-top: 140px;
+    padding-bottom: 0;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.features {
+    padding: 150px 0;
+}
+.featuresk .col-md-4 {
+    text-align: center;
+}
+.about-us {
+    padding-bottom: 50px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.about-us:hover {
+    transform: translateY(-10px);
+}
+.about-us p {
+    padding: 50px 10px 10px 10px;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 800px;
+}
+.features h2 {
+    font-size: 50px;
+    text-align: left;
+    padding-left: 150px;
+    padding-top: 10px;
+}
+.footer {
+    padding: 80px 20px 20px;
+    background: linear-gradient(to right, #0ee395,#00d4ff);
+    color: #fff;
+}
+.footer-logo {
+    width: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.footer .copyright {
+    text-align: center;
+    padding-top: 2%;
+}
+.footer .about {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+.footer .text {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.footer .fab fa-facebook {
+    background: black;
+}
+.fa-color {
+    color: black;
+}
